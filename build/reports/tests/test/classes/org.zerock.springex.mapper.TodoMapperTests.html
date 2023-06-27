@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - TodoMapperTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>TodoMapperTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.zerock.springex.mapper.html">org.zerock.springex.mapper</a> &gt; TodoMapperTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.232s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testSelectSearch()</td>
+<td class="success">0.232s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>13:25:25.142 [Test worker] INFO  org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+13:25:25.157 [Test worker] INFO  org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4cee7fa0, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7a26928a, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@601cbd8c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7180e701, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4e2c95ee, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@d0ec63, org.springframework.test.context.event.EventPublishingTestExecutionListener@5a5c128]
+13:25:25.763 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+13:25:25.836 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@122d6c22
+13:25:25.838 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+13:25:26.306 [Test worker] DEBUG org.zerock.springex.mapper.TodoMapper.selectList - ==&gt;  Preparing: select * from tbl_todo WHERE ( title like concat('%', ?, '%') OR writer like concat('%', ?, '%') ) and dueDate between ? and ? order by tno desc limit ?, ?
+13:25:26.327 [Test worker] DEBUG org.zerock.springex.mapper.TodoMapper.selectList - ==&gt; Parameters: 스프링(String), 스프링(String), 2022-12-01(LocalDate), 2023-12-31(LocalDate), 0(Integer), 10(Integer)
+13:25:26.383 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - &lt;==    Columns: tno, title, dueDate, writer, finished
+13:25:26.385 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - &lt;==        Row: 3061, 스프링테스트, 2023-06-21, user00, 0
+13:25:26.391 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - &lt;==        Row: 3059, 스프링테스트, 2023-06-21, user00, 0
+13:25:26.391 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - &lt;==        Row: 3057, 스프링테스트, 2023-06-21, user00, 0
+13:25:26.392 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - &lt;==        Row: 3055, 스프링테스트, 2023-06-21, user00, 0
+13:25:26.392 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - &lt;==        Row: 3053, 스프링테스트, 2023-06-21, user00, 0
+13:25:26.392 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - &lt;==        Row: 3049, 스프링테스트, 2023-06-21, user00, 0
+13:25:26.392 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - &lt;==        Row: 3047, 스프링테스트, 2023-06-21, user00, 0
+13:25:26.393 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - &lt;==        Row: 3045, 스프링테스트, 2023-06-21, user00, 0
+13:25:26.394 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - &lt;==        Row: 3043, 스프링테스트, 2023-06-21, user00, 0
+13:25:26.395 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - &lt;==        Row: 3041, 스프링테스트, 2023-06-21, user00, 0
+13:25:26.395 [Test worker] DEBUG org.zerock.springex.mapper.TodoMapper.selectList - &lt;==      Total: 10
+13:25:26.407 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - TodoVO(tno=3061, title=스프링테스트, dueDate=2023-06-21, writer=user00, finished=false)
+13:25:26.408 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - TodoVO(tno=3059, title=스프링테스트, dueDate=2023-06-21, writer=user00, finished=false)
+13:25:26.408 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - TodoVO(tno=3057, title=스프링테스트, dueDate=2023-06-21, writer=user00, finished=false)
+13:25:26.408 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - TodoVO(tno=3055, title=스프링테스트, dueDate=2023-06-21, writer=user00, finished=false)
+13:25:26.408 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - TodoVO(tno=3053, title=스프링테스트, dueDate=2023-06-21, writer=user00, finished=false)
+13:25:26.408 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - TodoVO(tno=3049, title=스프링테스트, dueDate=2023-06-21, writer=user00, finished=false)
+13:25:26.408 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - TodoVO(tno=3047, title=스프링테스트, dueDate=2023-06-21, writer=user00, finished=false)
+13:25:26.408 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - TodoVO(tno=3045, title=스프링테스트, dueDate=2023-06-21, writer=user00, finished=false)
+13:25:26.409 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - TodoVO(tno=3043, title=스프링테스트, dueDate=2023-06-21, writer=user00, finished=false)
+13:25:26.409 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - TodoVO(tno=3041, title=스프링테스트, dueDate=2023-06-21, writer=user00, finished=false)
+13:25:26.413 [Test worker] DEBUG org.zerock.springex.mapper.TodoMapper.getCount - ==&gt;  Preparing: select count(tno) from tbl_todo WHERE ( title like concat('%', ?, '%') OR writer like concat('%', ?, '%') ) and dueDate between ? and ?
+13:25:26.414 [Test worker] DEBUG org.zerock.springex.mapper.TodoMapper.getCount - ==&gt; Parameters: 스프링(String), 스프링(String), 2022-12-01(LocalDate), 2023-12-31(LocalDate)
+13:25:26.427 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.getCount - &lt;==    Columns: count(tno)
+13:25:26.428 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.getCount - &lt;==        Row: 1021
+13:25:26.431 [Test worker] DEBUG org.zerock.springex.mapper.TodoMapper.getCount - &lt;==      Total: 1
+13:25:26.431 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - 1021
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.0.2</a> at 2023. 6. 26. 오후 1:25:26</p>
+</div>
+</div>
+</body>
+</html>

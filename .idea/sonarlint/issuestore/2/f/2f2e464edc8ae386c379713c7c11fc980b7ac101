@@ -1,0 +1,6 @@
+
+
+java:S1149""_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ÿû¥ÿÿÿÿÿ8“ÑØ³1
+]	java:S125"<This block of commented-out lines of code should be removed.(ãÍÍ÷øÿÿÿÿ8”ÑØ³1
+N
+java:S1602&",Remove useless curly braces around statement(îı‡ıÿÿÿÿ8–ÑØ³1

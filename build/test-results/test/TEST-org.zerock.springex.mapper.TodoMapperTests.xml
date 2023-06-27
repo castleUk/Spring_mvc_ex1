@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.zerock.springex.mapper.TodoMapperTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-26T04:25:26" hostname="jangseong-ug-ui-MacBookPro.local" time="0.232">
+  <properties/>
+  <testcase name="testSelectSearch()" classname="org.zerock.springex.mapper.TodoMapperTests" time="0.232"/>
+  <system-out><![CDATA[13:25:25.142 [Test worker] INFO  org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+13:25:25.157 [Test worker] INFO  org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4cee7fa0, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7a26928a, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@601cbd8c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7180e701, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4e2c95ee, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@d0ec63, org.springframework.test.context.event.EventPublishingTestExecutionListener@5a5c128]
+13:25:25.763 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+13:25:25.836 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@122d6c22
+13:25:25.838 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+13:25:26.306 [Test worker] DEBUG org.zerock.springex.mapper.TodoMapper.selectList - ==>  Preparing: select * from tbl_todo WHERE ( title like concat('%', ?, '%') OR writer like concat('%', ?, '%') ) and dueDate between ? and ? order by tno desc limit ?, ?
+13:25:26.327 [Test worker] DEBUG org.zerock.springex.mapper.TodoMapper.selectList - ==> Parameters: 스프링(String), 스프링(String), 2022-12-01(LocalDate), 2023-12-31(LocalDate), 0(Integer), 10(Integer)
+13:25:26.383 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - <==    Columns: tno, title, dueDate, writer, finished
+13:25:26.385 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - <==        Row: 3061, 스프링테스트, 2023-06-21, user00, 0
+13:25:26.391 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - <==        Row: 3059, 스프링테스트, 2023-06-21, user00, 0
+13:25:26.391 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - <==        Row: 3057, 스프링테스트, 2023-06-21, user00, 0
+13:25:26.392 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - <==        Row: 3055, 스프링테스트, 2023-06-21, user00, 0
+13:25:26.392 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - <==        Row: 3053, 스프링테스트, 2023-06-21, user00, 0
+13:25:26.392 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - <==        Row: 3049, 스프링테스트, 2023-06-21, user00, 0
+13:25:26.392 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - <==        Row: 3047, 스프링테스트, 2023-06-21, user00, 0
+13:25:26.393 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - <==        Row: 3045, 스프링테스트, 2023-06-21, user00, 0
+13:25:26.394 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - <==        Row: 3043, 스프링테스트, 2023-06-21, user00, 0
+13:25:26.395 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.selectList - <==        Row: 3041, 스프링테스트, 2023-06-21, user00, 0
+13:25:26.395 [Test worker] DEBUG org.zerock.springex.mapper.TodoMapper.selectList - <==      Total: 10
+13:25:26.407 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - TodoVO(tno=3061, title=스프링테스트, dueDate=2023-06-21, writer=user00, finished=false)
+13:25:26.408 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - TodoVO(tno=3059, title=스프링테스트, dueDate=2023-06-21, writer=user00, finished=false)
+13:25:26.408 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - TodoVO(tno=3057, title=스프링테스트, dueDate=2023-06-21, writer=user00, finished=false)
+13:25:26.408 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - TodoVO(tno=3055, title=스프링테스트, dueDate=2023-06-21, writer=user00, finished=false)
+13:25:26.408 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - TodoVO(tno=3053, title=스프링테스트, dueDate=2023-06-21, writer=user00, finished=false)
+13:25:26.408 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - TodoVO(tno=3049, title=스프링테스트, dueDate=2023-06-21, writer=user00, finished=false)
+13:25:26.408 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - TodoVO(tno=3047, title=스프링테스트, dueDate=2023-06-21, writer=user00, finished=false)
+13:25:26.408 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - TodoVO(tno=3045, title=스프링테스트, dueDate=2023-06-21, writer=user00, finished=false)
+13:25:26.409 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - TodoVO(tno=3043, title=스프링테스트, dueDate=2023-06-21, writer=user00, finished=false)
+13:25:26.409 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - TodoVO(tno=3041, title=스프링테스트, dueDate=2023-06-21, writer=user00, finished=false)
+13:25:26.413 [Test worker] DEBUG org.zerock.springex.mapper.TodoMapper.getCount - ==>  Preparing: select count(tno) from tbl_todo WHERE ( title like concat('%', ?, '%') OR writer like concat('%', ?, '%') ) and dueDate between ? and ?
+13:25:26.414 [Test worker] DEBUG org.zerock.springex.mapper.TodoMapper.getCount - ==> Parameters: 스프링(String), 스프링(String), 2022-12-01(LocalDate), 2023-12-31(LocalDate)
+13:25:26.427 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.getCount - <==    Columns: count(tno)
+13:25:26.428 [Test worker] TRACE org.zerock.springex.mapper.TodoMapper.getCount - <==        Row: 1021
+13:25:26.431 [Test worker] DEBUG org.zerock.springex.mapper.TodoMapper.getCount - <==      Total: 1
+13:25:26.431 [Test worker] INFO  org.zerock.springex.mapper.TodoMapperTests - 1021
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
